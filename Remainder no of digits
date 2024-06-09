@@ -1,0 +1,58 @@
+The function/method count Digits return an integer representing the remainder when the given number is divided by the number of digits in it. The function/method count Digits accepts an argument-num,an integer representing the given number. The function/method countDigits compiles code successfully but fails to get the desirable result for some test cases due to logical errors. Your task is to fix the code so that it passes all the test cases.
+
+Input Format
+
+Read a number
+
+Constraints
+
+1<=n<10^7
+
+Output Format
+
+Print remainder of number by no of digits
+
+Sample Input 0
+
+785
+Sample Output 0
+
+2
+Explanation 0
+
+Count the digits: 785 --> No of digits=3 785%3=2
+
+Contest ends in an hour
+Submissions: 419
+Max Score: 30
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+​
+8
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+9
+    return 0;
+10
+}
+11
+​
+Line: 1 Col: 1
+Run Code Submit CodeUpload Code as File 
+Test against custom input
