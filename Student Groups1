@@ -1,0 +1,117 @@
+Accept total number of participants in class. A group of four divisions has to be created from registered participants. Total no of participants “P” 100>=p<=200 Note: If number of participants entered by user is less than 100 or greater than 200 display “INVALID INPUT” and quit.
+
+Input Format
+
+Take number of students in a class
+
+Constraints
+
+100>=p<=200
+
+Output Format
+
+Print Stidents in group wise
+
+Sample Input 0
+
+104
+Sample Output 0
+
+26
+26
+26
+26
+Sample Input 1
+
+127
+Sample Output 1
+
+31
+31
+31
+34
+Sample Input 2
+
+320
+Sample Output 2
+
+INVALID INPUT
+Sample Input 3
+
+102
+Sample Output 3
+
+25
+25
+25
+27
+Submissions: 463
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+​
+2
+#include <stdio.h>
+3
+#include <string.h>
+4
+#include <math.h>
+5
+#include <stdlib.h>
+6
+​
+7
+int main() {
+8
+    int nos;
+9
+    scanf("%d",&nos);
+10
+    if(nos<100||nos>200){
+11
+        printf("INVALID INPUT");
+12
+    }
+13
+    else{
+14
+        int stperg=nos/4;
+15
+        printf("%d\n%d\n%d\n%d",stperg,stperg,stperg,stperg+nos%4);
+16
+    }
+17
+    return 0;
+18
+}
+Line: 18 Col: 2
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Testcase 2
+Testcase 3
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+104
+Your Output (stdout)
+
+26
+26
+26
+26
+Expected Output
+
+26
+26
+26
+26
