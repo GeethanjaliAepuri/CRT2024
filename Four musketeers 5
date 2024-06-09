@@ -1,0 +1,55 @@
+teger corresponds to x1. The second integer corresponds to y1. The third and fourth integers correspond to x2 and y2 respectively. The fifth and sixth integers correspond to x3 and y3 respectively.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+The output consists of two floating point numbers (with one decimal place) which correspond to the location of the house.
+
+Sample Input 0
+
+2
+4
+10
+15
+5
+8
+Sample Output 0
+
+5.7
+9.0
+Submissions: 209
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+​
+8
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+9
+    return 0;
+10
+}
+11
+​
+Line: 1 Col: 1
+Run Code Submit CodeUpload Code as File 
+Test against custom input
