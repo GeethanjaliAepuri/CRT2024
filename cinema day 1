@@ -1,0 +1,103 @@
+There is a practice of showing a cinema in the auditorium of a college on a cinema day. A cinema day is a day where the sum of Day(D), Month(M), Year(Y)should be divisible by product of 3 and 4. On that particular day the total number of students in the hostel should be greater than 50 but less than 100. Write a program to find whether the given day is cinema day or not.
+
+Input Format
+
+Read day,month,year and number of students
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print Cinema Day or Not a Cinema Day
+
+Sample Input 0
+
+3 
+3 
+1914 
+76
+Sample Output 0
+
+Cinema Day
+Submissions: 199
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+    int d,m,y,nos;
+8
+   scanf("%d%d%d%d",&d,&m,&y,&nos);
+9
+    if((d+m+y)%12==0)
+10
+    {
+11
+        if(nos>50&&nos<100)
+12
+        {
+13
+            printf("Cinema Day");
+14
+        }
+15
+        else
+16
+        {
+17
+            printf("Not a Cinema Day");
+18
+        }
+19
+    }
+20
+    else
+21
+    {
+22
+        printf("Not a Cinema Day");
+23
+    }
+24
+    return 0;
+25
+}
+26
+​
+Line: 25 Col: 2
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+3 
+3 
+1914 
+76
+Your Output (stdout)
+
+Cinema Day
+Expected Output
+
+Cinema Day
