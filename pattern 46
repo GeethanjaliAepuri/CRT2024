@@ -1,0 +1,203 @@
+Print the pattern
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+print the pattern
+
+Sample Input 0
+
+10
+Sample Output 0
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+Sample Input 1
+
+15
+Sample Output 1
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * * * * * * * * * 
+* * * * * * * * * * * * 
+* * * * * * * * * * * * * 
+* * * * * * * * * * * * * * 
+* * * * * * * * * * * * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+Submissions: 31
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+void pattern(int rows)
+6
+{
+7
+    int i,j;
+8
+    for(int i=1;i<=rows;i++)
+9
+    {
+10
+        for(int j=1;j<=i;j++)
+11
+        {
+12
+                    printf("* ");
+13
+        }
+14
+        printf("\n");
+15
+    }
+16
+          for(i=1;i<rows;i++){
+17
+              for(j=1;j<=(rows/3);j++){
+18
+                  printf("* ");
+19
+                  
+20
+              }
+21
+              printf("\n");
+22
+              
+23
+          }
+24
+ }
+25
+  
+26
+   int main() {
+27
+      int n;    
+28
+       scanf("%d",&n);
+29
+       int  rows=n;
+30
+          pattern(rows);
+31
+       printf("\n");
+32
+    return 0;
+33
+  }
+34
+​
+Line: 34 Col: 1
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+10
+Your Output (stdout)
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+
+Expected Output
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
+* * * 
