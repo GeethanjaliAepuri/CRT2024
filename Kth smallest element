@@ -1,0 +1,127 @@
+Andrew is a stock trader who trades in N selected stocks. He has calculated the relative stock price changes in the N stocks from the previous day stock prices. Now, his lucky number is K, so he wishes to invest in the particular stock that has Kth smallest relative stock value. Write an algorithm for Andrew to find the Kth smallest stock price out of the selected N stocks.
+
+Input Format
+
+The first line of the input consists of two space-separated integers – numOfStocks and valuek, representing the number of selected stocks (N) And the value K for which he wishes to find the stock price, respectively. The second line consists of N space-separated integers – stock1, stock2, ……, stock N representing the relative stock prices of the selected stocks.
+
+Constraints
+
+1<=n<10^7
+
+Output Format
+
+Print an integer representing the Kth smallest stock price of selected N stocks.
+
+Sample Input 0
+
+7 5
+9 -3 8 -6 -7 18 10
+Sample Output 0
+
+9
+Explanation 0
+
+The sorted relative stock prices are [-7, -6, -3, 8, 9, 10, 18] So, the 5th smallest stock price is 9.
+
+Sample Input 1
+
+6 3
+10 21 33 44 18 28
+Sample Output 1
+
+21
+Submissions: 219
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+​
+2
+#include <stdio.h>
+3
+#include <string.h>
+4
+#include <math.h>
+5
+#include <stdlib.h>
+6
+​
+7
+int main() {
+8
+    int n,p;
+9
+    scanf("%d%d",&n,&p);
+10
+    int a[n],i,j,t;
+11
+    for(i=0;i<n;i++)
+12
+    {
+13
+    scanf("%d",&a[i]);
+14
+    }
+15
+    for(i=0;i<n;i++)
+16
+    {
+17
+        for(j=i+1;j<n;j++)
+18
+        {
+19
+        if(a[i]>a[j])
+20
+        {
+21
+            t=a[i];
+22
+            a[i]=a[j];
+23
+            a[j]=t;
+24
+        }
+25
+        }   
+26
+        if(i==p-1)
+27
+        {
+28
+            printf("%d",a[i]);
+29
+            break;
+30
+        }
+31
+    }
+32
+    
+33
+    return 0;
+34
+}
+Line: 34 Col: 2
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+7 5
+9 -3 8 -6 -7 18 10
+Your Output (stdout)
+
+9
+Expected Output
+
+9
