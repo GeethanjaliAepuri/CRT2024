@@ -1,0 +1,101 @@
+In an online maths tutorial a student is given a list of N numbers. From this list, the student is required to sum each element in the list such that the ith element in the output list will be equal to the sum to the first element until the ith element in the list.
+
+Input Format
+
+The first line of input consists of an integer – numSize representing the count of total numbers in the list(N). The next line consists of N space separated integers. element1, element2,…… element-n representing the numeric value in the list.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print the elements
+
+Sample Input 0
+
+5
+1 4 2 6 3
+Sample Output 0
+
+1 5 7 13 16
+Explanation 0
+
+The sum of each element 1, (1+4=5), (1+4+2=7), (1+4+2+6=13), (1+4+2+6+3=16). Hence the output is 1 5 7 13 16.
+
+Sample Input 1
+
+8
+5 24 11 43 24 66 10 40
+Sample Output 1
+
+5 29 40 83 107 173 183 223
+Submissions: 263
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+​
+2
+#include <stdio.h>
+3
+#include <string.h>
+4
+#include <math.h>
+5
+#include <stdlib.h>
+6
+​
+7
+int main() {
+8
+    int n;
+9
+    scanf("%d",&n);
+10
+    int a[n],i,s=0;
+11
+    for(i=0;i<n;i++)
+12
+    {
+13
+        scanf("%d",&a[i]);
+14
+    }
+15
+    for(i=0;i<n;i++)
+16
+    {
+17
+        s=s+a[i];
+18
+        printf("%d ",s);
+19
+    }
+20
+    return 0;
+21
+}
+Line: 21 Col: 2
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+5
+1 4 2 6 3
+Your Output (stdout)
+
+1 5 7 13 16 
+Expected Output
+
+1 5 7 13 16
