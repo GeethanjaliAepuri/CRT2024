@@ -1,0 +1,74 @@
+Write a program to count the number of vowels in the given string.
+
+Input Format
+
+Read a string
+
+Constraints
+
+string
+
+Output Format
+
+print the number of Vowels.
+
+Sample Input 0
+
+Java language
+Sample Output 0
+
+6
+Sample Input 1
+
+python LANGUAGE
+Sample Output 1
+
+5
+Submissions: 311
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+​
+2
+#include <stdio.h>
+3
+#include <string.h>
+4
+#include <math.h>
+5
+#include <stdlib.h>
+6
+​
+7
+int main() {
+8
+    
+9
+    char s[50];
+10
+    int i,cnt=0;
+11
+    scanf("%[^\n]s",s);
+12
+    for(i=0;s[i]!='\0';i++)
+13
+    {
+14
+        if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U')        {
+15
+            cnt++;
+16
+        }
+17
+    }
+18
+    printf("%d",cnt);
+19
+    return 0;
+20
+}
